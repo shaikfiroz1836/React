@@ -1,17 +1,16 @@
-import React from 'react';
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"></link>
-class Navbar extends React.Component{
-    render(){
-        return <div>
-            <nav className='navbar navbar-dark bg-dark navbar-expand-lg'>
-                <ul>
-                    <li className='navbar-brand'>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>contact</li>
-                </ul>
-            </nav>
-        </div>
-    }
+import React from 'react'
+import {Link} from 'react-router-dom'
+const Navbar = () => {
+  return <nav className='navbar navbar bg-dark navbar-expand-lg'>
+    <Link to="/home" className="navbar-brand">React All</Link>
+    <div className='ml-auto'>
+        <ul className='navbar-nav'>
+            <li> <Link className="nav-link" to="/home">Home</Link> </li>
+            <li> <Link className="nav-link" to="/contacts">Contacts</Link> </li>
+            <li> <Link className="nav-link" to="/login">Login</Link> </li>
+        </ul>
+    </div>
+  </nav>
 }
+
 export default Navbar
