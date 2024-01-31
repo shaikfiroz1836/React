@@ -16,7 +16,7 @@ const Contacts = () => {
 
   return (
     <>
-      <pre>{JSON.stringify(contacts)}</pre>
+      {/* <pre>{JSON.stringify(contacts)}</pre> */}
       <div className="container">
         <div className="row">
           <div className="col-8">
