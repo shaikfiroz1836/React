@@ -11,6 +11,7 @@ const ContactList = (props) => {
               <th>Id</th>
               <th>Name</th>
               <th>Email</th>
+              <th>Country</th>
             </tr>
           </thead>
           <tbody>
@@ -20,6 +21,7 @@ const ContactList = (props) => {
                   <td> {contact.login.uuid.substr(32)} </td>
                   <td> {contact.name.first} </td>
                   <td> {contact.email} </td>
+                  <td> {contact.country} </td>
                 </tr>
               })
             }
