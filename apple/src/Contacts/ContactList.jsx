@@ -8,8 +8,6 @@ const ContactList = (props) => {
         <table className='table'>
           <thead className='bg-dark text-white'>
             <tr>
-
-              <th>Index</th>
               <th>Id</th>
               <th>Name</th>
               <th>Email</th>
