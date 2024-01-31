@@ -11,7 +11,7 @@ const ContactList = (props) => {
         <h3>ContactList Component</h3>
    {/*      <pre>{JSON.stringify(props.contacts)}</pre> */}
         <table className='table'>
-          <thead className='bg-dark text-white'>
+          <thead className='bg-warning text-white'>
             <tr>
               <th>Index</th>
               <th>Id</th>
