@@ -9,10 +9,15 @@ function App() {
     
     <div className="App">
       <Navbar logoText='Helping myself with react'/>
-      <div className='value'>{value}</div>
+      
+      <div>Calculator
+        <div>
+        <div className='value'>{value}</div>
       <button onClick={()=>{setValue(value+1)}}>Add</button>
       <button onClick={()=>{setValue(value-1)}}>Sub</button>
       <button onClick={()=>{setValue(0)}}>clear</button>
+        </div>
+      </div>
       <Footer/>
     </div>
   );
