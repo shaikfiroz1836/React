@@ -11,6 +11,7 @@ function App() {
       <Navbar logoText='Helping myself with react'/>
       <div className='value'>{value}</div>
       <button onClick={()=>{setValue(value+1)}}>Add</button>
+      <button onClick={()=>{setValue(value-1)}}>Sub</button>
       <Footer/>
     </div>
   );
