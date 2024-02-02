@@ -1,9 +1,11 @@
 import React from 'react'
 import Footer from './Footer'
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div>
+        <div>
+            <div>{props.logoText}</div>
       <ul>
         <li>Home</li>
         <li>About</li>
@@ -11,6 +13,7 @@ const Navbar = () => {
         <li>Contact</li>
       </ul>
       <Footer/>
+    </div>
     </div>
   )
 }
