@@ -12,10 +12,7 @@ function App() {
       
       <div>Calculator
         <div>
-        <div className='value'>{value}</div>
-      <button onClick={()=>{setValue(value+1)}}>Add</button>
-      <button onClick={()=>{setValue(value-1)}}>Sub</button>
-      <button onClick={()=>{setValue(0)}}>clear</button>
+     
         </div>
       </div>
       <Footer/>
