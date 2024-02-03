@@ -8,7 +8,7 @@ function App() {
   return (
     
     <div className="App">
-      <Navbar logoText='Helping myself with react'/>
+      <Navbar logoText='Helping myself with react and this is a Navbar'/>
       
       <div>Calculator
         <div>
