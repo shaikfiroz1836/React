@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from './Footer'
 
 const Navbar = (props) => {
   return (
@@ -12,7 +11,6 @@ const Navbar = (props) => {
         <li>Services</li>
         <li>Contact</li>
       </ul>
-      <Footer/>
     </div>
     </div>
   )

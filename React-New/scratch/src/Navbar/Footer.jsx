@@ -6,10 +6,10 @@ const Footer = () => {
       This is a Footer
       <ul>
         <li>Github</li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Youtube</li>
       </ul>
     </div>
   )
