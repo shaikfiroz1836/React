@@ -1,13 +1,15 @@
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import card from "./Components/card";
+import Card from "./Components/Card"
 function App() {
  
   return (
     
     <div className="App">
       <Navbar/>
-      <Card/>
+      <div className="cards">
+        <Card/>
+      </div>
       <Footer/>
     </div>
   );

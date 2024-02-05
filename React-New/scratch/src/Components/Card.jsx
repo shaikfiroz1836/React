@@ -1,12 +1,12 @@
 import React from 'react'
-
-const card = () => {
+import "./Card.css"
+const Card = () => {
   return (
     <div className='card'>
-      <h1>Card Title</h1>
-      <p>Discription</p>
+       <h1>Title of Card</h1>
+       <p>Discription of Card</p>
     </div>
   )
 }
 
-export default card
+export default Card
