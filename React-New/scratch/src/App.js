@@ -1,11 +1,13 @@
-import Navbar from "./Navbar/Navbar";
-import Footer from "./Navbar/Footer";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import card from "./Components/card";
 function App() {
  
   return (
     
     <div className="App">
       <Navbar/>
+      <Card/>
       <Footer/>
     </div>
   );
