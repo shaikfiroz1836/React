@@ -3,7 +3,7 @@ import "./Footer.css"
 const Footer = () => {
   return (
     <div className='Footer'>
-      Copyright|All Rights Reserved
+      Copyright &copy; www.Firoz.vercel.app | All Rights Reserved
       <ul>
         <li>Github</li>
         <li>Instagram</li>
