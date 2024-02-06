@@ -6,9 +6,7 @@ function App() {
  
   const[value,setValue]=useState(0)
   const [Color, setColor] = useState(0)
-useEffect(() => {
- alert("Hello! Welcome To This Page")
-}, [])
+
 
 useEffect(() => {
   alert("Value had changed")

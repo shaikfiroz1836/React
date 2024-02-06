@@ -4,10 +4,17 @@ const Navbar = ({color}) => {
   useEffect(() => {
     alert("Hello! Welcome To This Page")
    }, [])
-   
+
   useEffect(() => {
     alert("Color has changed")
   }, [color])
+  
+  useEffect(() => {
+  alert("Navbar component is Working")
+    return () => {
+      alert("Component Navbar was Commented")
+    }
+  }, [])
   
   return (
     <div>
