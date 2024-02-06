@@ -8,7 +8,7 @@ const Navbar = ({color}) => {
   return (
     <div>
       <nav>
-        this navbar has {color} color
+        this navbar has {color} color...{" "}
         <ul>
           <li>Home</li>
           <li>About</li>
