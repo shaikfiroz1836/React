@@ -1,10 +1,19 @@
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Card from "./Components/Card"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 function App() {
  
   const[value,setValue]=useState(0)
+useEffect(() => {
+ alert("Hello! Welcome To This Page")
+}, [])
+
+useEffect(() => {
+  alert("Value had changed")
+ }, [value])
+
+
   return (
     
     
