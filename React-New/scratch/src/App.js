@@ -5,12 +5,14 @@ import { useState, useEffect } from "react";
 function App() {
  
   const[value,setValue]=useState(0)
+  const [Color, setColor] = useState(0)
 useEffect(() => {
  alert("Hello! Welcome To This Page")
 }, [])
 
 useEffect(() => {
   alert("Value had changed")
+  setColor(Color+1)
  }, [value])
 
 
@@ -18,7 +20,7 @@ useEffect(() => {
     
     
     <div className="App">
-      <Navbar color="Red"/>
+      <Navbar color={"Red" + Color}/>
       <div className="cards">
         <Card title="Card1" description="Card1 Desc"/>
         <Card title="Card2" description="Card2 Desc"/>
