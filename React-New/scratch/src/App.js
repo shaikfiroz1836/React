@@ -18,7 +18,7 @@ useEffect(() => {
     
     
     <div className="App">
-      <Navbar/>
+      <Navbar color="Red"/>
       <div className="cards">
         <Card title="Card1" description="Card1 Desc"/>
         <Card title="Card2" description="Card2 Desc"/>
