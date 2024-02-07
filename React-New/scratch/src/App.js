@@ -19,7 +19,7 @@ const [Btn,setBtn]=useState(false)
     
     <div className="App">
       <Navbar color={"Red" + Color}/>
-      <Navbar/>
+      
       <div className="cards">
         <Card title="Card1" description="Card1 Desc"/>
         <Card title="Card2" description="Card2 Desc"/>
@@ -29,12 +29,12 @@ const [Btn,setBtn]=useState(false)
       </div>
       {Btn?<button>It is True</button>:<button>It is false</button>}        <br />
       <button onClick={()=>setBtn(!Btn)}>True/False</button>
-      // <div className="Cal">
-      // <h2>{value}</h2>
-      // <button onClick={()=>{setValue(value+1)}}>Add</button>
-      // <button onClick={()=>{setValue(value-1)}}>Sub</button>
-      // <button onClick={()=>{setValue(0)}}>Clear</button>
-      // </div>
+       <div className="Cal">
+       <h2>{value}</h2>
+      <button onClick={()=>{setValue(value+1)}}>Add</button>
+      <button onClick={()=>{setValue(value-1)}}>Sub</button>
+       <button onClick={()=>{setValue(0)}}>Clear</button>
+       </div>
       <Footer/>
     </div>
   );
