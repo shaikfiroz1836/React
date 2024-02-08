@@ -1,15 +1,24 @@
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Card from "./Components/Card"
-import { useState } from "react";
+import { useState, useEffect } from "react";
+function Application() {
+ 
+  const[value,setValue]=useState(0)
+  const [Color, setColor] = useState(0)
 
-function App() {
-const [value,setValue]=useState(0)
+
+useEffect(() => {
+  alert("Value had changed")
+  setColor(Color+1)
+ }, [value])
+
+const [Btn,setBtn]=useState(false)
   return (
     
     
     <div className="App">
-      <Navbar/>
+      <Navbar color={"Red" + Color}/>
       
       <div className="cards">
         <Card title="Card1" description="Card1 Desc"/>
@@ -18,6 +27,8 @@ const [value,setValue]=useState(0)
         <Card title="Card4" description="Card4 Desc"/>
         
       </div>
+      {Btn?<button>It is True</button>:<button>It is false</button>}        <br />
+      <button onClick={()=>setBtn(!Btn)}>True/False</button>
        <div className="Cal">
        <h2>{value}</h2>
       <button onClick={()=>{setValue(value+1)}}>Add</button>
@@ -29,4 +40,4 @@ const [value,setValue]=useState(0)
   );
 }
 
-export default App;
+export default Application;
