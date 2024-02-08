@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "./Components/Navbar"
+import Home from "./Components/Home"
+import Message from "./Components/Message";
 function App() {
 
   return (
@@ -7,6 +9,8 @@ function App() {
     
     <div className="App">
       <Navbar/>
+     
+      <Message/>
     </div>
   );
 }
