@@ -16,11 +16,11 @@ function App() {
       <Navbar/>
      <BrowserRouter>
      <Routes>
-      <Route path="/Home" element={<Home/>}/>
-      <Route path="/About" element={<About/>}/>
-      <Route path="/Education" element={<Education/>}/>
-      <Route path="/Project" element={<Project/>}/>
-      <Route path="/Contact" element={<Contact/>}/>
+      <Route path="/Home" element={<Home />} />
+      <Route path="/About" element={<About />} />
+      <Route path="/Education" element={<Education />} />
+      <Route path="/Project" element={<Project />} />
+      <Route path="/Contact" element={<Contact />} />
      </Routes>
      </BrowserRouter>
       <Message/>  <hr />
