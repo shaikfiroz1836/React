@@ -1,38 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-class Message extends React.Component{
-    state={
-        msg:"Hello"
+const Message = () => {
+    const [msg, setMsg] = useState("Hello");
+
+    const GmHandler = () => {
+        setMsg("Good Morning");
     }
 
-    GmHangler=()=>{
-        this.setState({msg:"Good Morning"})
+    const GaHandler = () => {
+        setMsg("Good Afternoon");
     }
 
-    GaHangler=()=>{
-        this.setState({msg:"Good Afternoon"})
+    const GeHandler = () => {
+        setMsg("Good Evening");
     }
 
-    GeHangler=()=>{
-        this.setState({msg:"Good Evening"})
+    const GnHandler = () => {
+        setMsg("Good Night");
     }
 
-    GnHangler=()=>{
-        this.setState({msg:"Good Night"})
-    }
-
-
-    render(){
-       return <div>
-            <pre>{JSON.stringify(this.state)}</pre>
+    return (
+        <div>
+            <pre>{JSON.stringify({ msg })}</pre>
             <hr />
-            <h2>The Message is:{this.state.msg}</h2>
-            <button onClick={this.GmHangler}>Gm</button>
-            <button onClick={this.GaHangler}>Ga</button>
-            <button onClick={this.GeHangler}>Ge</button>
-            <button onClick={this.GnHangler}>Gn</button>
+            <h2>The Message is: {msg}</h2>
+            <button onClick={GmHandler}>Gm</button>
+            <button onClick={GaHandler}>Ga</button>
+            <button onClick={GeHandler}>Ge</button>
+            <button onClick={GnHandler}>Gn</button>
         </div>
-    }
+    );
 }
 
-export default Message
+export default Message;
