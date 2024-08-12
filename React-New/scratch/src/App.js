@@ -1,4 +1,5 @@
 import React from "react";
+import CompA from './PropsEx/CompA'
 import Navbar from "./Components/Navbar"
 import Message from "./Components/Message";
 import Home from "./Pages/Home";
@@ -24,6 +25,8 @@ function App() {
       </Routes>
     </Router>
       <Message/>  <hr />
+
+      <CompA/>
     </div>
   );
 }
